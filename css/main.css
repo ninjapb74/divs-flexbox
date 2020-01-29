@@ -108,17 +108,49 @@ body {
   height: 100%;
 }
 
-.wrapper {
+header {
+  font-size: 5em;
+}
+
+header,
+footer {
+  height: 80px;
+  width: 100%;
+}
+
+footer {
+  background-color: pink;
+}
+
+main {
+  font-size: 2em;
+  height: 200px;
+  width: 100%;
+}
+
+header,
+footer,
+main {
+  /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.flex-container {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
   display:flex;
   justify-content: space-between;
+  width: 100%;
+  flex-flow: row wrap;
 }
 
-.div-1, .div-2, .div-3 {
+.flex-items {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   display: flex;
-  width: 30%;
+  width: 25%;
   justify-content: center;
   align-items:flex-start;
   color: #fff;
@@ -127,6 +159,9 @@ body {
   /*background-color: #f16059;*/
   height: 30%;
   padding: 1em 2em 1em 2em;
+}
+
+#div-1, #div-2{
   border-right: 1px solid #3d3d29;
 }
 
